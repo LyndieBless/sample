@@ -2,53 +2,107 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Sample Layout</title>
+<title>sample layout</title>
 
 <style type="text/css">
 <!--
 body{
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+    text-align:center;
+    margin:0px;
+    padding:0px;
 }
-#wrapper {
-    text-align: left;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    width: 780px;
+#wrapper{
+    text-align:left;
+    margin-top:0px;
+    margin-right:auto;
+    margin-bottom:0px;
+    margin-left:auto;
+    width:780px;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+    box-shadow: 10px 5px 5px 5px lightblue;
+    
+}
+#header{
+    margin-top:0px;
+    margin-bottom:0px;
+    
+}
+#content{
+    margin-top:0px;
+    margin-bottom:0px;
+}
+#footer{
+    clear:both;
+    background-color: #336699;
+    height:35px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+    color:white;
+}
+#logo{
+    height:95px;
+    background-color: #666699;
+    padding-bottom:12px;
+    color:white;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    box-shadow: 10px 5px 5px 5px lightblue;
 }
-#header {
-    margin-top: 0px;
-    margin-bottom: 0px;
+#nav{
+    height:370px;
+    width:200px;
+    background-color: #668888;
+    color:white;
+    float:left;
 }
-#content {
-    margin-top: 0px;
-    margin-bottom:0px; 
+#categories{
+    height:370px;
+    width:200px;
+    background-color: #668888;
+    color:white;
+    float:right;
 }
-#footer {
-    clear: both;
-    background-color: #336699;
-    height: 35px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    color: white;
+#topcontent{
+    height:185px;
+    width:380px;
+    background-color:darkgreen;
+    color:white;
+    float:left;
 }
-
+#bottomcontent{
+    height:185px;
+    width:380px;
+    background-color:yellowgreen;
+    color:white;
+    float:right;
+}
+#banner{
+    height:180px;
+    background-color:blue;
+    margin-top: 5px;
+   
+}
 -->
 </style>
 </head>
+
 <body>
     <div id="wrapper">
-    <div id="header"></div>
-    <div id="content"></div>
-    <div id="footer"></div>
+      <div id="header">
+        <div id="logo"></div>
+        <div id="banner"></div>
+        <div id="nav"></div>
+       
+      </div>
+      <div id="content">
+        <div id="categories"></div>
+        <div id="topcontent"></div>
+        <div id="bottomcontent"></div>
+      </div>       
+      <div id="footer"></div>
     </div>
+    
 </body>
 </html>
